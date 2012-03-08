@@ -1,4 +1,4 @@
-/* Headers */
+/* --- Headers & paragraphs --- */
 h1, h2, h3, h4, h5, h6{
   font-weight: normal;
   line-height: 1em;
@@ -31,7 +31,8 @@ p{
 h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p{
   margin-top: 0;
 }
-/* Layout */
+
+/* --- Layout --- */
 .table{
   display: table;
   border-collapse: separate;
@@ -68,15 +69,47 @@ h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p{
 .tcell.middle   { vertical-align: middle !important; }
 .tcell.bottom   { vertical-align: bottom !important; }
 
-/* --- Fixes --- */
-.ie7 .table{
-  white-space: nowrap;
-}
-.ie7 .tcell{
+.inline{
   display: inline;
+}
+.block{
+  display: block;
+}
+.inline-block, .inlineblock{
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
   zoom: 1;
+  *display: inline;
+}
+.rgt{ text-align: right;  }
+.ctr{ text-align: center; }
+.lft{ text-align: left;   }
+
+/* --- Lists --- */
+ul.nobullet, ul.nobullet > li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.nolist > li, ol.nolist > li{
+  display: inline;
+}
+ul.seplist li + li:before, ol.seplist li + li:before{
+  content: '|';
+  color: #eee;
+  padding: 0 0.7em 0 0.5em;
 }
 
+/* --- Utilities --- */
+.uc, .user-content{ word-wrap: break-word; }
+.nowrap{ white-space: nowrap; }
+.clickable{
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* --- Media queries --- */
 @media handheld,
   only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-device-pixel-ratio: 2),
@@ -114,4 +147,13 @@ h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p{
     .table.for-mobile > .tcell.t90{ width: 90%; }
     .table.for-mobile > .tcell.t95{ width: 95%; }
     .table.for-mobile > .tcell.t100{ width: 100%; }
+}
+
+/* --- Fixes --- */
+.ie7 .table{
+  white-space: nowrap;
+}
+.ie7 .tcell{
+  display: inline;
+  zoom: 1;
 }
