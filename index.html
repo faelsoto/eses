@@ -12,6 +12,69 @@
   <link rel="stylesheet" href="eses.css">
 </head>
 <body>
+  <h1><strong>Layouts</strong></h1>
+  <p>
+    <h4 class="inline">Tables are back!</h4> Just this time, without all the ugly HTML code. Start a new layout with a <code>.table</code> and some <code>.tcell</code> elements inside it:
+  </p>
+  <div class="table">
+    <div class="tcell">Column 1</div>
+    <div class="tcell">Column 2</div>
+    <div class="tcell">Column 3</div>
+  </div>
+  <p>
+    Not quite table-looking yet? Just add a <code>full</code> class to the <code>.table</code>!
+  </p>
+  <div class="table full">
+    <div class="tcell">Column 1</div>
+    <div class="tcell">Column 2</div>
+    <div class="tcell">Column 3</div>
+  </div>
+  <p>
+    Resize the window down and behold how each column becomes a block elements. But wait, what if you actually want to preserve columns for small devices? Just add the a <code>for-mobile</code> class to the <code>.table</code> element:
+  </p>
+  <div class="table full for-mobile">
+    <div class="tcell">These columns</div>
+    <div class="tcell">will be preserved</div>
+    <div class="tcell">on small-window devices</div>
+  </div>
+  <p>
+    You can align horizontally as well as vertically any column's content and change their sizes, all with just HTML classes
+  </p>
+  <div class="table full for-mobile">
+    <div class="tcell t50 top rgt">
+      <p>
+        This column is 50%, aligned to the top right.
+      </p>
+      <p>
+        All this content will be preserved for mobile and small-sized windows.
+      </p>
+      <p>
+        You can even put a table inside a table:
+      </p>
+      <div class="table full ctr">
+        <div class="tcell t40">
+          <h4>40%</h4>
+        </div>
+        <div class="tcell t30">
+          <h4>30%</h4>
+        </div>
+        <div class="tcell t20">
+          <h4>20%</h4>
+        </div>
+        <div class="tcell t10">
+          <h4>10%</h4>
+        </div>
+      </div>
+    </div>
+    <div class="tcell t20 middle ctr">
+      Just 20%, aligned to the center and middle.
+    </div>
+    <div class="tcell t30 bottom lft">
+      30%, aligned to the left and the bottom of the table.
+    </div>
+  </div>  
+  <hr>
+  <h1><strong>Headers</strong> <em>&amp;</em> <strong>Paragraphs</strong></h1>
   <article class="table for-mobile middle full">
     <div class="tcell t50">
       Nice spacing between headers and paragraphs. 
