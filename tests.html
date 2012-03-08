@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+<title>Media Queries Tests</title>
+<meta content="width=device-width,initial-scale=1.0" name="viewport" />
+<style type="text/css">
+div:before{ display: block; height: 30px; }
+@media handheld{
+  .a1:before{
+    background: #f00;
+    content: "handheld";
+  }
+}
+@media only screen and (max-width: 480px){
+  .a2:before{
+    background: #00f;
+    content: "only screen and (max-width: 480px)";
+  }
+}
+@media only screen and (max-device-width: 480px){
+  .a3:before{
+    background: #aaf;
+    content: "only screen and (max-device-width: 480px)";
+  }
+}
+@media only screen and (max-device-width: 480px) and (resolution: 163dpi){
+  .a4:before{
+    background: #faa;
+    content: "only screen and (max-device-width: 480px) and (resolution: 163dpi)";
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2){
+  .a5:before{
+    background: #003;
+    content: "only screen and (-webkit-min-device-pixel-ratio: 2) ";
+  }
+}
+@media only screen and (min-resolution: 300dpi){
+  .a6:before{
+    background: #00a;
+    content: "only screen and (min-resolution: 300dpi)";
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio : 0.75), only screen and (min-device-pixel-ratio : 0.75) {
+  .a7:before{
+    background: #300;
+    content: "only screen and (min-device-pixel-ratio : 0.75)";
+  }
+}
+@media only screen and (orientation: landscape) and (max-device-width: 800px) {
+  .a8:before{
+    background: #aa3;
+    content: "only screen and (orientation: landscape) and (max-device-width: 800px) ";
+  }
+}
+</style>
+</head>
+<body>
+  <div class="a1"/>
+  <div class="a2"/>
+  <div class="a3"/>
+  <div class="a4"/>
+  <div class="a5"/>
+  <div class="a6"/>
+  <div class="a7"/>
+  <div class="a8"/>
+</body>
+</html>

@@ -1,0 +1,117 @@
+/* Headers */
+h1, h2, h3, h4, h5, h6{
+  font-weight: normal;
+  line-height: 1em;
+  margin: 0.7em 0 0.3em;
+}
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child{
+  margin-top: 0;
+}
+h1{
+  font-size: 2em;
+}
+h2{
+  font-size: 1.8em;
+}
+h3{
+  font-size: 1.6em;
+}
+h4{
+  font-size: 1.4em;
+}
+h5{
+  font-size: 1.2em;
+}
+h6{
+  font-size: 1.15em;
+}
+p{
+  margin: 0.5em 0;
+}
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p{
+  margin-top: 0;
+}
+/* Layout */
+.table{
+  display: table;
+  border-collapse: separate;
+  vertical-align: top;
+}
+  .table.full{ width: 100%; }
+
+.tcell{ display: table-cell; }
+  .tcell.t5{ width: 5%; }
+  .tcell.t10{ width: 10%; }
+  .tcell.t15{ width: 15%; }
+  .tcell.t20{ width: 20%; }
+  .tcell.t30{ width: 30%; }
+  .tcell.t33{ width: 33%; }
+  .tcell.t40{ width: 40%; }
+  .tcell.t45{ width: 45%; }
+  .tcell.t50{ width: 50%; }
+  .tcell.t55{ width: 55%; }
+  .tcell.t60{ width: 60%; }
+  .tcell.t65{ width: 65%; }
+  .tcell.t66{ width: 66%; }
+  .tcell.t70{ width: 70%; }
+  .tcell.t75{ width: 75%; }
+  .tcell.t80{ width: 80%; }
+  .tcell.t85{ width: 85%; }
+  .tcell.t90{ width: 90%; }
+  .tcell.t95{ width: 95%; }
+  .tcell.t100{ width: 100%; }
+
+.table.top    > .tcell{ vertical-align: top; }
+.table.middle > .tcell{ vertical-align: middle; }
+.table.bottom > .tcell{ vertical-align: bottom; }
+.tcell.top      { vertical-align: top !important; }
+.tcell.middle   { vertical-align: middle !important; }
+.tcell.bottom   { vertical-align: bottom !important; }
+
+/* --- Fixes --- */
+.ie7 .table{
+  white-space: nowrap;
+}
+.ie7 .tcell{
+  display: inline;
+  zoom: 1;
+}
+
+@media handheld,
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (orientation: landscape) and (max-device-width: 800px),
+  only screen and (max-device-width: 480px) and (resolution: 163dpi),
+  only screen and (max-device-width: 480px),
+  only screen and (max-width: 480px){
+  .table, .table > .tcell{
+    display: block;
+    width: 100%;
+  }
+  .table.for-mobile{
+    display: table;
+  }
+  .table.for-mobile > .tcell{
+    display: table-cell;
+  }
+    .table.for-mobile > .tcell.t5{ width: 5%; }
+    .table.for-mobile > .tcell.t10{ width: 10%; }
+    .table.for-mobile > .tcell.t15{ width: 15%; }
+    .table.for-mobile > .tcell.t20{ width: 20%; }
+    .table.for-mobile > .tcell.t30{ width: 30%; }
+    .table.for-mobile > .tcell.t33{ width: 33%; }
+    .table.for-mobile > .tcell.t40{ width: 40%; }
+    .table.for-mobile > .tcell.t45{ width: 45%; }
+    .table.for-mobile > .tcell.t50{ width: 50%; }
+    .table.for-mobile > .tcell.t55{ width: 55%; }
+    .table.for-mobile > .tcell.t60{ width: 60%; }
+    .table.for-mobile > .tcell.t65{ width: 65%; }
+    .table.for-mobile > .tcell.t66{ width: 66%; }
+    .table.for-mobile > .tcell.t70{ width: 70%; }
+    .table.for-mobile > .tcell.t75{ width: 75%; }
+    .table.for-mobile > .tcell.t80{ width: 80%; }
+    .table.for-mobile > .tcell.t85{ width: 85%; }
+    .table.for-mobile > .tcell.t90{ width: 90%; }
+    .table.for-mobile > .tcell.t95{ width: 95%; }
+    .table.for-mobile > .tcell.t100{ width: 100%; }
+}
