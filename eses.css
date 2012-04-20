@@ -98,7 +98,7 @@ ul.nolist > li, ol.nolist > li{
 ul.seplist li + li:before, ol.seplist li + li:before{
   content: '|';
   color: #eee;
-  padding: 0 0.7em 0 0.5em;
+  padding: 0 0.5em;
 }
 
 /* --- Utilities --- */
