@@ -103,7 +103,7 @@ ul.seplist li + li:before, ol.seplist li + li:before{
 
 /* --- Utilities --- */
 .uc, .user-content{ word-wrap: break-word; }
-.nowrap{ white-space: nowrap; }
+.oneline, .nowrap{ white-space: nowrap; }
 .clickable{
   cursor: pointer;
   cursor: hand;
