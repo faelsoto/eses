@@ -40,7 +40,7 @@ h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p{
 }
   .table.full{ width: 100%; }
 
-.tcell{ display: table-cell; }
+.tcell{ display: table-cell; vertical-align: top; }
   .tcell.t5{ width: 5%; }
   .tcell.t10{ width: 10%; }
   .tcell.t15{ width: 15%; }
@@ -126,6 +126,7 @@ ul.seplist li + li:before, ol.seplist li + li:before{
   }
   .table.for-mobile > .tcell{
     display: table-cell;
+    vertical-align: top;
   }
     .table.for-mobile > .tcell.t5{ width: 5%; }
     .table.for-mobile > .tcell.t10{ width: 10%; }
