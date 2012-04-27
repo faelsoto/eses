@@ -41,26 +41,28 @@ h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p{
   .table.full{ width: 100%; }
 
 .tcell{ display: table-cell; vertical-align: top; }
-  .tcell.t5{ width: 5%; }
-  .tcell.t10{ width: 10%; }
-  .tcell.t15{ width: 15%; }
-  .tcell.t20{ width: 20%; }
-  .tcell.t30{ width: 30%; }
-  .tcell.t33{ width: 33%; }
-  .tcell.t40{ width: 40%; }
-  .tcell.t45{ width: 45%; }
-  .tcell.t50{ width: 50%; }
-  .tcell.t55{ width: 55%; }
-  .tcell.t60{ width: 60%; }
-  .tcell.t65{ width: 65%; }
-  .tcell.t66{ width: 66%; }
-  .tcell.t70{ width: 70%; }
-  .tcell.t75{ width: 75%; }
-  .tcell.t80{ width: 80%; }
-  .tcell.t85{ width: 85%; }
-  .tcell.t90{ width: 90%; }
-  .tcell.t95{ width: 95%; }
-  .tcell.t100{ width: 100%; }
+  .tcell.t5{ width: 5%; min-width: 5%; max-width: 5%; }
+  .tcell.t10{ width: 10%; min-width: 10%; max-width: 10%; }
+  .tcell.t15{ width: 15%; min-width: 15%; max-width: 15%; }
+  .tcell.t20{ width: 20%; min-width: 20%; max-width: 20%; }
+  .tcell.t25{ width: 25%; min-width: 25%; max-width: 25%; }
+  .tcell.t30{ width: 30%; min-width: 30%; max-width: 30%; }
+  .tcell.t33{ width: 33%; min-width: 33%; max-width: 33%; }
+  .tcell.t35{ width: 35%; min-width: 35%; max-width: 35%; }
+  .tcell.t40{ width: 40%; min-width: 40%; max-width: 40%; }
+  .tcell.t45{ width: 45%; min-width: 45%; max-width: 45%; }
+  .tcell.t50{ width: 50%; min-width: 50%; max-width: 50%; }
+  .tcell.t55{ width: 55%; min-width: 55%; max-width: 55%; }
+  .tcell.t60{ width: 60%; min-width: 60%; max-width: 60%; }
+  .tcell.t65{ width: 65%; min-width: 65%; max-width: 65%; }
+  .tcell.t66{ width: 66%; min-width: 66%; max-width: 66%; }
+  .tcell.t70{ width: 70%; min-width: 70%; max-width: 70%; }
+  .tcell.t75{ width: 75%; min-width: 75%; max-width: 75%; }
+  .tcell.t80{ width: 80%; min-width: 80%; max-width: 80%; }
+  .tcell.t85{ width: 85%; min-width: 85%; max-width: 85%; }
+  .tcell.t90{ width: 90%; min-width: 90%; max-width: 90%; }
+  .tcell.t95{ width: 95%; min-width: 95%; max-width: 95%; }
+  .tcell.t100{ width: 100%; min-width: 100%; max-width: 100%; }
 
 .table.top    > .tcell{ vertical-align: top; }
 .table.middle > .tcell{ vertical-align: middle; }
@@ -128,26 +130,28 @@ ul.seplist > li + li:before, ol.seplist > li + li:before{
     display: table-cell;
     vertical-align: top;
   }
-    .table.for-mobile > .tcell.t5{ width: 5%; }
-    .table.for-mobile > .tcell.t10{ width: 10%; }
-    .table.for-mobile > .tcell.t15{ width: 15%; }
-    .table.for-mobile > .tcell.t20{ width: 20%; }
-    .table.for-mobile > .tcell.t30{ width: 30%; }
-    .table.for-mobile > .tcell.t33{ width: 33%; }
-    .table.for-mobile > .tcell.t40{ width: 40%; }
-    .table.for-mobile > .tcell.t45{ width: 45%; }
-    .table.for-mobile > .tcell.t50{ width: 50%; }
-    .table.for-mobile > .tcell.t55{ width: 55%; }
-    .table.for-mobile > .tcell.t60{ width: 60%; }
-    .table.for-mobile > .tcell.t65{ width: 65%; }
-    .table.for-mobile > .tcell.t66{ width: 66%; }
-    .table.for-mobile > .tcell.t70{ width: 70%; }
-    .table.for-mobile > .tcell.t75{ width: 75%; }
-    .table.for-mobile > .tcell.t80{ width: 80%; }
-    .table.for-mobile > .tcell.t85{ width: 85%; }
-    .table.for-mobile > .tcell.t90{ width: 90%; }
-    .table.for-mobile > .tcell.t95{ width: 95%; }
-    .table.for-mobile > .tcell.t100{ width: 100%; }
+    .table.for-mobile > .tcell.t5{ width: 5%; min-width: 5%; max-width: 5%; }
+    .table.for-mobile > .tcell.t10{ width: 10%; min-width: 10%; max-width: 10%; }
+    .table.for-mobile > .tcell.t15{ width: 15%; min-width: 15%; max-width: 15%; }
+    .table.for-mobile > .tcell.t20{ width: 20%; min-width: 20%; max-width: 20%; }
+    .table.for-mobile > .tcell.t20{ width: 25%; min-width: 25%; max-width: 25%; }
+    .table.for-mobile > .tcell.t30{ width: 30%; min-width: 30%; max-width: 30%; }
+    .table.for-mobile > .tcell.t33{ width: 33%; min-width: 33%; max-width: 33%; }
+    .table.for-mobile > .tcell.t35{ width: 35%; min-width: 35%; max-width: 35%; }
+    .table.for-mobile > .tcell.t40{ width: 40%; min-width: 40%; max-width: 40%; }
+    .table.for-mobile > .tcell.t45{ width: 45%; min-width: 45%; max-width: 45%; }
+    .table.for-mobile > .tcell.t50{ width: 50%; min-width: 50%; max-width: 50%; }
+    .table.for-mobile > .tcell.t55{ width: 55%; min-width: 55%; max-width: 55%; }
+    .table.for-mobile > .tcell.t60{ width: 60%; min-width: 60%; max-width: 60%; }
+    .table.for-mobile > .tcell.t65{ width: 65%; min-width: 65%; max-width: 65%; }
+    .table.for-mobile > .tcell.t66{ width: 66%; min-width: 66%; max-width: 66%; }
+    .table.for-mobile > .tcell.t70{ width: 70%; min-width: 70%; max-width: 70%; }
+    .table.for-mobile > .tcell.t75{ width: 75%; min-width: 75%; max-width: 75%; }
+    .table.for-mobile > .tcell.t80{ width: 80%; min-width: 80%; max-width: 80%; }
+    .table.for-mobile > .tcell.t85{ width: 85%; min-width: 85%; max-width: 85%; }
+    .table.for-mobile > .tcell.t90{ width: 90%; min-width: 90%; max-width: 90%; }
+    .table.for-mobile > .tcell.t95{ width: 95%; min-width: 95%; max-width: 95%; }
+    .table.for-mobile > .tcell.t100{ width: 100%; min-width: 100%; max-width: 100%; }
 }
 
 /* --- Fixes --- */
