@@ -102,6 +102,28 @@ ul.seplist > li + li:before, ol.seplist > li + li:before{
   color: #eee;
   padding: 0 0.5em;
 }
+/* --- Forms --- */
+.inputtext, .textarea{
+  border: 1px solid #ccc;
+  color: #666;
+  border-radius: 2px;
+  padding: 0.1em 0.2em;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.inputtext:focus, .textarea:focus{
+  color: #333;
+  border-color: #999;
+}
+.inputtext.full, .textarea.full{
+  width: 100%;
+}
+.inputtext.big, .textarea.big{
+  font-size: 1.3em;
+}
 
 /* --- Utilities --- */
 .uc, .user-content{ word-wrap: break-word; }
