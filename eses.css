@@ -102,6 +102,7 @@ ul.seplist > li + li:before, ol.seplist > li + li:before{
   color: #eee;
   padding: 0 0.5em;
 }
+
 /* --- Forms --- */
 .inputtext, .textarea{
   border: 1px solid #ccc;
@@ -177,10 +178,10 @@ ul.seplist > li + li:before, ol.seplist > li + li:before{
 }
 
 /* --- Fixes --- */
-.ie7 .table{
+.lt-ie8 .table, .ie7 .table{
   white-space: nowrap;
 }
-.ie7 .tcell{
+.lt-ie8 .tcell, .ie7 .tcell{
   display: inline;
   zoom: 1;
 }
