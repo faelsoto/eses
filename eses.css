@@ -180,8 +180,21 @@ ul.seplist > li + li:before, ol.seplist > li + li:before{
 /* --- Fixes --- */
 .lt-ie8 .table, .ie7 .table{
   white-space: nowrap;
+  overflow: hidden;
 }
 .lt-ie8 .tcell, .ie7 .tcell{
-  display: inline;
+  display: inline !important;
   zoom: 1;
+  white-space: normal;
+  margin-right: -0.5%;
+}
+.lt-ie8 .seplist > li, .ie7 .seplist > li{
+  border-left: 1px solid #aaa;
+  margin-left: 0.5em;
+  padding-left: 0.5em;
+}
+.lt-ie8 .seplist > li:first-child, .ie7 .seplist > li:first-child{
+  border-left: 0;
+  margin-left: 0;
+  padding-left: 0;
 }
