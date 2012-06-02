@@ -161,6 +161,7 @@ textarea{
   .table, .table > .tcell{
     display: block;
     width: 100%;
+    padding-left: 0;
   }
   .table.for-mobile{
     display: table;
