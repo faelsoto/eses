@@ -132,15 +132,27 @@ input.full, .inputtext.full, textarea.full, .textarea.full{
 input.big, .inputtext.big, textarea.big .textarea.big{
   font-size: 1.3em;
 }
+textarea{
+  min-height: 100px;
+  resize: vertical;
+}
 :invalid{
   border: 1px solid #922 !important;
   color: #922 !important;
   background: #fff !important;
 }
-textarea{
-  min-height: 100px;
-  resize: vertical;
+input.boton{
+  border: 1px solid #999;
+  border-radius: 0.2em;
+  background-color: #eee;
+  color: #333;
+  padding: 0.45em 0.7em;
+  letter-spacing: -0.05em;
+  font-weight: 400;
 }
+  input.boton.importante{
+    font-weight: 800;
+  }
 
 /* --- Utilities --- */
 .uc, .user-content{ word-wrap: break-word; }
