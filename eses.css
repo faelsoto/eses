@@ -71,7 +71,7 @@ h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p{
 .tcell.middle   { vertical-align: middle !important; }
 .tcell.bottom   { vertical-align: bottom !important; }
 
-.tcell + .tcell{
+.table.tpad > .tcell + .tcell, .tcell.tpad{
   padding-left: 0.75em;
 }
 
@@ -206,7 +206,7 @@ input.boton{
     .table.for-mobile > .tcell.t95{ width: 95%; min-width: 95%; max-width: 95%; }
     .table.for-mobile > .tcell.t100{ width: 100%; min-width: 100%; max-width: 100%; }
 
-  .table.for-mobile > .tcell + .tcell{
+  .table.tpad.for-mobile > .tcell + .tcell, .tcell.tpad{
     padding-left: 0.75em;
   }
 }
