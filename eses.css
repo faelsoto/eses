@@ -151,9 +151,20 @@ input.boton{
   letter-spacing: -0.05em;
   font-weight: 400;
 }
+  input.boton.nopad{
+    padding: 0.1em 0.5em;
+  }
   input.boton.importante{
     font-weight: 800;
   }
+
+/* --- Tables --- */
+table.zebra > tbody > tr:nth-child(even), table.zebra > tr:nth-child(even){
+  background: #f9f9f9;
+}
+table.zebra > tbody > tr:hover, table.zebra > tr:hover{
+  background: #fefefe;
+}
 
 /* --- Utilities --- */
 .uc, .user-content{ word-wrap: break-word; }
