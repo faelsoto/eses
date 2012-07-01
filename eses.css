@@ -221,6 +221,9 @@ table.zebra > tbody > tr:hover, table.zebra > tr:hover{
   .table.tpad.for-mobile > .tcell + .tcell, .tcell.tpad{
     padding-left: 0.75em;
   }
+  .table.for-mobile.top    > .tcell{ vertical-align: top; }
+  .table.for-mobile.middle > .tcell{ vertical-align: middle; }
+  .table.for-mobile.bottom > .tcell{ vertical-align: bottom; }
 }
 
 /* --- Fixes --- */
