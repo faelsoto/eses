@@ -231,6 +231,9 @@ table.zebra > tbody > tr:hover, table.zebra > tr:hover{
   white-space: nowrap;
   overflow: hidden;
 }
+.lt-ie8 .tcell, .ie7 .tcell{
+  display: inline !important;
+}
 .lt-ie9 .tcell, .lt-ie8 .tcell, .ie8 .tcell, .ie7 .tcell{
   display: inline !important;
   display: inline-block !important;
