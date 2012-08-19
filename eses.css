@@ -137,7 +137,7 @@ textarea{
   min-height: 100px;
   resize: vertical;
 }
-:invalid{
+input:invalid, textarea:invalid{
   border: 1px solid #922 !important;
   color: #922 !important;
   background: #fff !important;
@@ -175,13 +175,7 @@ table.zebra > tbody > tr:hover, table.zebra > tr:hover{
 }
 
 /* --- Media queries --- */
-@media handheld,
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-device-pixel-ratio: 2),
-  only screen and (orientation: landscape) and (max-device-width: 800px),
-  only screen and (max-device-width: 480px) and (resolution: 163dpi),
-  only screen and (max-device-width: 480px),
-  only screen and (max-width: 480px){
+@media only screen and (max-width: 35em){
   .table, .table > .tcell{
     display: block;
     width: 100%;
