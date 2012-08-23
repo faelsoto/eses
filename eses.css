@@ -28,7 +28,9 @@ h6{
 p{
   margin: 0.5em 0;
 }
-h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p{
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p,
+h1 + ul, h2 + ul, h3 + ul, h4 + ul, h5 + ul, h6 + ul,
+h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol{
   margin-top: 0;
 }
 
@@ -93,6 +95,16 @@ h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p{
 .lft{ text-align: left;   }
 
 /* --- Lists --- */
+ul, ol{
+  padding-left: 2em;
+}
+ul > li > ul, ul > ul,
+ol > li > ol, ol > ol,
+ol > li > ul, ol > ul,
+ul > li > ol, ul > ol{
+  margin: 0;
+  padding-left: 1em;
+}
 ul.nobullet, ul.nobullet > li{
   margin: 0;
   padding: 0;
@@ -168,7 +180,8 @@ table.zebra > tbody > tr:hover, table.zebra > tr:hover{
 
 /* --- Images --- */
 img, figure{
-  padding: 0.5em 1em;
+  padding: 0.5em;
+  margin: 0.25em 0.5em;
 }
 img.nopad, figure.nopad{
   padding: 0;
@@ -179,9 +192,9 @@ img.rgt, figure.rgt{
 img.lft, figure.lft{
   float: left;
 }
-
 figure img{
   padding: 0;
+  margin: 0;
   float: none !important;
 }
 figure figcaption{
