@@ -166,6 +166,31 @@ table.zebra > tbody > tr:hover, table.zebra > tr:hover{
   background: #fefefe;
 }
 
+/* --- Images --- */
+img, figure{
+  padding: 0.5em 1em;
+}
+img.nopad, figure.nopad{
+  padding: 0;
+}
+img.rgt, figure.rgt{
+  float: right;
+}
+img.lft, figure.lft{
+  float: left;
+}
+
+figure img{
+  padding: 0;
+  float: none !important;
+}
+figure figcaption{
+  padding: 0.2em 0 0.3em;
+  color: #555;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
 /* --- Utilities --- */
 .uc, .user-content{ word-wrap: break-word; }
 .oneline, .nowrap{ white-space: nowrap; }
