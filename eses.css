@@ -110,12 +110,17 @@ ul.nobullet, ul.nobullet > li{
   padding: 0;
   list-style: none;
 }
+ul.nobullet > li:before, ul.nobullet > li:after{
+  display: none;
+}
 ul.nolist > li, ol.nolist > li{
   display: inline;
 }
 ul.seplist > li + li:before, ol.seplist > li + li:before{
-  content: '|';
-  color: #eee;
+  display: inline;
+  position: static !important;
+  content: '|' !important;
+  color: #eee !important;
   padding: 0 0.5em;
 }
 
@@ -171,6 +176,9 @@ input.boton{
   }
 
 /* --- Tables --- */
+table.full{
+  width: 100%;
+}
 table.zebra > tbody > tr:nth-child(even), table.zebra > tr:nth-child(even){
   background: #f9f9f9;
 }
@@ -184,6 +192,7 @@ img, figure{
   margin: 0.25em 0.5em;
 }
 img.nopad, figure.nopad{
+  margin: 0;
   padding: 0;
 }
 img.rgt, figure.rgt{
@@ -225,7 +234,9 @@ figure figcaption{
   .table, .table > .tcell{
     display: block;
     width: 100%;
-    padding-left: 0;
+    min-width: 100%;
+    max-width: 100%;
+    padding-left: 0 !important;
   }
   .table.for-mobile{
     display: table;
@@ -233,7 +244,7 @@ figure figcaption{
   .table.for-mobile > .tcell{
     display: table-cell;
     vertical-align: top;
-    padding-left: 0;
+    padding-left: 0 !important;
   }
     .table.for-mobile > .tcell.t5{ width: 5%; min-width: 5%; max-width: 5%; }
     .table.for-mobile > .tcell.t10{ width: 10%; min-width: 10%; max-width: 10%; }
@@ -259,7 +270,7 @@ figure figcaption{
     .table.for-mobile > .tcell.t100{ width: 100%; min-width: 100%; max-width: 100%; }
 
   .table.tpad.for-mobile > .tcell + .tcell, .tcell.tpad{
-    padding-left: 0.75em;
+    padding-left: 0.75em !important;
   }
   .table.for-mobile.top    > .tcell{ vertical-align: top; }
   .table.for-mobile.middle > .tcell{ vertical-align: middle; }
