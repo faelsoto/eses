@@ -69,9 +69,9 @@ h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol{
 .table.top    > .tcell{ vertical-align: top; }
 .table.middle > .tcell{ vertical-align: middle; }
 .table.bottom > .tcell{ vertical-align: bottom; }
-.tcell.top      { vertical-align: top !important; }
-.tcell.middle   { vertical-align: middle !important; }
-.tcell.bottom   { vertical-align: bottom !important; }
+.tcell.top      { vertical-align: top; }
+.tcell.middle   { vertical-align: middle; }
+.tcell.bottom   { vertical-align: bottom; }
 
 .table.tpad > .tcell + .tcell, .tcell.tpad{
   padding-left: 0.75em;
@@ -118,9 +118,9 @@ ul.nolist > li, ol.nolist > li{
 }
 ul.seplist > li + li:before, ol.seplist > li + li:before{
   display: inline;
-  position: static !important;
-  content: '|' !important;
-  color: #eee !important;
+  position: static;
+  content: '|';
+  color: #eee;
   padding: 0 0.5em;
 }
 
@@ -155,9 +155,9 @@ textarea{
   resize: vertical;
 }
 input:invalid, textarea:invalid{
-  border: 1px solid #922 !important;
-  color: #922 !important;
-  background: #fff !important;
+  border: 1px solid #922;
+  color: #922;
+  background: #fff;
 }
 input.boton{
   border: 1px solid #999;
@@ -204,7 +204,7 @@ img.lft, figure.lft{
 figure img{
   padding: 0;
   margin: 0;
-  float: none !important;
+  float: none;
 }
 figure figcaption{
   padding: 0.2em 0 0.3em;
@@ -236,7 +236,7 @@ figure figcaption{
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    padding-left: 0 !important;
+    padding-left: 0;
   }
   .table.for-mobile{
     display: table;
@@ -244,7 +244,7 @@ figure figcaption{
   .table.for-mobile > .tcell{
     display: table-cell;
     vertical-align: top;
-    padding-left: 0 !important;
+    padding-left: 0;
   }
     .table.for-mobile > .tcell.t5{ width: 5%; min-width: 5%; max-width: 5%; }
     .table.for-mobile > .tcell.t10{ width: 10%; min-width: 10%; max-width: 10%; }
@@ -270,7 +270,7 @@ figure figcaption{
     .table.for-mobile > .tcell.t100{ width: 100%; min-width: 100%; max-width: 100%; }
 
   .table.tpad.for-mobile > .tcell + .tcell, .tcell.tpad{
-    padding-left: 0.75em !important;
+    padding-left: 0.75em;
   }
   .table.for-mobile.top    > .tcell{ vertical-align: top; }
   .table.for-mobile.middle > .tcell{ vertical-align: middle; }
@@ -293,14 +293,14 @@ figure figcaption{
   overflow: hidden;
 }
 .lt-ie9 .tcell, .lt-ie8 .tcell, .ie8 .tcell, .ie7 .tcell{
-  display: inline !important;
-  display: inline-block !important;
+  display: inline;
+  display: inline-block;
   zoom: 1;
   white-space: normal;
   margin-right: -0.5%;
 }
 .lt-ie8 .tcell, .ie7 .tcell{
-  display: inline !important;
+  display: inline;
 }
 .lt-ie8 .seplist > li, .ie7 .seplist > li{
   border-left: 1px solid #aaa;
