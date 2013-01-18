@@ -155,9 +155,9 @@ textarea{
   resize: vertical;
 }
 input:invalid, textarea:invalid{
-  border: 1px solid #922 !important;
-  color: #922 !important;
-  background: #fff !important;
+  border: 1px solid #922;
+  color: #922;
+  background: #fff;
 }
 input.boton{
   border: 1px solid #999;
