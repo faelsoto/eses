@@ -123,7 +123,14 @@ ul.seplist > li + li:before, ol.seplist > li + li:before{
   color: #eee !important;
   padding: 0 0.5em;
 }
-
+ul.customlist, ol.customlist {
+  counter-reset: li;
+}
+ul.customlist > li:before, ol.customlist > li:before {
+  counter-increment: li;
+  content: 'Custom ' counter(li) ' ';
+  color: #4d4d4d;
+}
 /* --- Forms --- */
 input, textarea{
   box-sizing: border-box;
